@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TINY POODLE.ORG</title>
+</head>
+<link rel="icon" type="image/svg" href="./img/logo.svg" />
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/custom.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+<style>
+    @font-face {
+        font-family: customb;
+        src: url('./fonts/STOP.ttf');
+    }
+
+    @font-face {
+        font-family: avo;
+        src: url(./fonts/UTM\ Avo.ttf);
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: avo;
+        src: url(./fonts/UTM\ AvoBold.ttf);
+        font-weight: 500;
+        font-style: bold;
+    }
+
+    body {
+        font-family: avo;
+    }
+
+    .font-bananas {
+        font-family: avo;
+        font-weight: bold;
+    }
+
+    .bg-pink {
+        background: #98511B;
+    }
+
+    .bg-yellow {
+        background: #FCEE21;
+    }
+
+    .roadmap {
+        color: #FCEE21;
+    }
+
+    .roadmap .card-content {
+        min-height: 280px;
+        padding: 0 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FCEE21;
+    }
+
+    .roadmap .card {
+        border: 1px solid #FCEE21;
+    }
+
+    .card {
+        justify-content: center;
+        background-color: unset;
+        border: none;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        min-height: 150px;
+    }
+
+    .title {
+        font-size: 60px;
+        font-weight: bolder;
+    }
+
+    .logo-text {
+        font-size: 60px;
+    }
+
+    .video {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        background-color: #000;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .video video {
+        width: 100%;
+    }
+
+    .progress {
+        height: 1.5rem;
+        border-radius: 30px;
+        overflow: hidden;
+    }
+
+    .progress-bar {
+        background-color: #212529;
+        border-radius: 30px;
+    }
+
+    .phantram-label {
+        font-weight: bold;
+        margin-bottom: 3px;
+    }
+
+    .border-bottom {
+        border-bottom: 1px solid #00000026 !important;
+    }
+
+    .border-top {
+        border-top: 1px solid #00000026 !important;
+    }
+
+    .phase-box {
+        width: calc(100% / 5);
+        margin-bottom: 20px;
+    }
+
+    .bg-pink .card {
+        box-shadow: rgb(0 0 12 / 20%) 0px 7px 29px 0px;
+        border-radius: 5px;
+    }
+
+    footer img {
+        width: 50px;
+    }
+
+    footer p-absolute {
+        right: 0;
+        width: min-contents;
+    }
+
+    .screenshot img {
+        /* border: 1px solid #efefef; */
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        border-radius: 5px;
+    }
+
+    .shot1 img {
+        transform: translateX(30%) scale(0.9);
+        z-index: 1;
+        position: relative;
+    }
+
+    .shot2 img {
+        z-index: 9;
+        position: relative;
+    }
+
+    .shot3 img {
+        transform: translatex(-30%) scale(0.9);
+        z-index: 1;
+        position: relative;
+    }
+
+
+    .howto {
+        border: 1px solid #98511B;
+        border-radius: 30px;
+        width: 50%;
+        margin: 0 auto;
+        padding: 1rem 5rem 3rem;
+    }
+
+    @media (max-width: 400px) {
+        .title {
+            font-size: 40px;
+        }
+
+        .card h3 {
+            font-size: 30px !important;
+        }
+
+        .section2 .card h3 {
+            font-size: 20px !important;
+        }
+
+        .section1 .title {
+            font-size: 30px;
+        }
+
+
+        .logo-text {
+            font-size: 50px;
+        }
+
+        .howtosection {
+            padding: 50px 10px !important;
+        }
+
+        .howto {
+            width: 100%;
+            padding: 20px;
+        }
+
+        .TOKENOMICS2 {
+            padding-left: 10px !important;
+        }
+
+        .social {
+            position: unset !important;
+        }
+
+        .tinypoodle {
+            font-size: 50px !important;
+        }
+    }
+
+
+    @media (max-width: 400px) {
+        .m-revese {
+            flex-direction: column-reverse;
+        }
+
+        .screenshot img {
+            transform: scale(1.5) translateY(8%);
+        }
+
+        .shot1 img {
+            transform: scale(1.2) translateX(10%) translateY(8%);
+        }
+
+        .shot3 img {
+            transform: scale(1.2) translateX(-10%) translateY(8%);
+        }
+
+        .coming {
+            margin-top: 70px;
+        }
+    }
+</style>
+
+<body>
+    <nav class="border-bottom bg-yellow">
+        <div class="container">
+            <h1 class="text-center font-bananas logo-text">TINY POODLE.ORG</h1>
+        </div>
+    </nav>
+    <section class="bg-yellow pt-5 pb-5">
+        <div class="container">
+            <div class="row m-revese">
+                <div class="col-md-7 col-12">
+                    <h2 class="title mt-2">TELL YOUR STORY <h2>
+                            <h1 class="tinypoodle" style="font-size: 80px;">TINY POODLE</h1>
+
+                            <p style="font-size: 20px;">Tiny Poodle is where everyone can farm and participate in <br>
+                                #random raffle to get the highest reward, <br>
+                                #lottery #staking #social #metaverse</p>
+                </div>
+                <div class="col-md-5 col-12 d-flex align-items-center justify-content-center">
+                    <img class="mb-3" src="./img/logo.svg" width="300px" alt="">
+                </div>
+            </div>
+            <!-- <div class="row">
+                <div class="col-12 mt-4">
+                    <div class="video-bg video lazyloaded">
+                        <video autoplay="" preload="none" muted="" poster="./img/poster.jpg">
+                            <source data-src="./img/intro.mp4" src="./img/intro.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+
+    <section class="roadmap bg-pink pt-5 pb-5">
+        <h2 class="text-center title mb-4">ROADMAP</h2>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="card pt-3 mb-2">
+                        <h3 class="font-cooper text-center" style="font-size: 40px;">Phase 1</h3>
+                        <div class="card-content">
+                            <p class="text-center pt-5 pb-5 font-cooper">Launch website
+                                <br>
+                                Airdrop and Private Sale
+                                <br>
+                                Public Sale
+                                <br>
+                                Start liquidity on Pancake Swap
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="card pt-3 mb-2">
+                        <h3 class="font-cooper text-center" style="font-size: 40px;">Phase 2</h3>
+                        <div class="card-content">
+                            <p class="text-center pt-5 pb-5 font-cooper">Run Staking lottery in November
+                                <br>
+                                CoinGecko Listing
+                                <br>
+                                CoinMarketCap Listing
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="card pt-3 mb-2">
+                        <h3 class="font-cooper text-center" style="font-size: 40px;">Phase 3</h3>
+                        <div class="card-content">
+                            <p class="text-center pt-5 pb-5 font-cooper">30,000 Holders <br>
+                                Boost influencer marketing <br>
+                                Dex development in Q4
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="card pt-3 mb-2">
+                        <h3 class="font-cooper text-center" style="font-size: 40px;">Phase 4</h3>
+                        <div class="card-content">
+                            <p class="text-center pt-5 pb-5 font-cooper">Target 100,000 telegram members <br>
+                                Real-time interactive social network <br>
+                                development, will launch test <br>
+                                in early 2022
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-yellow p-5 howtosection">
+        <div class="howto">
+            <h1 class="text-center mb-5 mt-2">HOW TO BUY</h1>
+            <p>1. Download and install the app, Metamask </p>
+            <p> 2. Purchase BNB, send them to your wallet.</p>
+            <p>3. Go to PancakeSwap.</p>
+            <p>4. On Pancake Swap, click on the connect wallet button.</p>
+            <p>5. In the “From” slot select BNB. In the bottom slot click ”Select a currency” and
+                enter this contract address into the search field, and you should be able to find.</p>
+            <p>6. Contract address:</p>
+            <p> 7. Before swapping, click on the cog wheel and set the slippage to between 14-16%.</p>
+            <p>8. Now, set the amount you want to purchase and press the swap button.</p>
+            <p> 9. Confirm the transaction and HODL</p>
+        </div>
+    </section>
+    <section class="bg-yellow pt-5 pb-5">
+        <div class="container">
+            <h2 class="title text-center">TOKENOMICS</h2>
+            <div class="row">
+                <div class="col-md-6 pl-3 pr-3 col-12 mb-5">
+                    <p class="text-center mb-0" style="font-weight: bold; font-size: 30px;">Buy Fees</p>
+                    <p class="text-center" style="font-weight: bold; font-size: 50px;">12%</p>
+                    <div class="phantram mb-2">
+                        <div class="phantram-label">
+                            Liquidity
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 6%;" aria-valuenow="9"
+                                aria-valuemin="0" aria-valuemax="100">4%</div>
+                        </div>
+                    </div>
+                    <div class="phantram mb-2">
+                        <div class="phantram-label">
+                            Buy Back
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 6%;" aria-valuenow="2"
+                                aria-valuemin="0" aria-valuemax="100">4%</div>
+                        </div>
+                    </div>
+                    <div class="phantram mb-2">
+                        <div class="phantram-label">
+                            Marketing and Development
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 6%;" aria-valuenow="2"
+                                aria-valuemin="0" aria-valuemax="100">4%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 mb-5 TOKENOMICS2"
+                    style="display: flex; flex-direction: column; justify-content: end; padding-left: 5rem;">
+                    <h3>Total: 200,000,000 TPD</h3>
+                    <h3>Private Rate: 3,000,000/BNB</h3>
+                    <h3> DXsale Rate: 2,100,000/BNB</h3>
+                    <h3> Pancake Rate: 1,800,000/BNB</h3>
+                </div>
+            </div>
+    </section>
+
+    <footer class="text-center bg-pink border-top pt-3 pb-3" style="min-height: 80px;">
+        <div class="mb-2 social" style="position: absolute; right: 5em;">
+            <a style="margin-right: 1rem;" href="https://t.me/tinypoodle" target="_blank"><img src="./img/tele.svg"
+                    alt=""></a>
+            <a href="https://twitter.com/tinypoodlegroup?t=mO9U7v6bGW5Px_NKPboY0w&s=09" target="_blank"><img
+                    src="./img/tw.svg" alt=""></a>
+        </div>
+        <div style="color: #FCEE21; font-size: 20px; line-height: 50px;">Copyright ©2021 TINY POODLE</div>
+    </footer>
+</body>
+<script>
+    const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+    observer.observe();
+</script>
+
+</html>
